@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/center_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jotangi.twinsSum.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jotangi.twinsSum.ui.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/enterMeetingFragment"
+        android:name="com.jotangi.twinsSum.ui.fragment.EnterMeetingFragment"
+        android:label="EnterMeetingFragment"
+        tools:layout="@layout/fragment_enter_meeting" />
+    <fragment
+        android:id="@+id/memberInfoFragment"
+        android:name="com.jotangi.twinsSum.ui.fragment.MemberInfoFragment"
+        android:label="fragment_member_info"
+        tools:layout="@layout/fragment_member_info" />
+    <fragment
+        android:id="@+id/createMeetingFragment"
+        android:name="com.jotangi.twinsSum.ui.fragment.CreateMeetingFragment"
+        android:label="fragment_create_meeting"
+        tools:layout="@layout/fragment_create_meeting" />
+    <fragment
+        android:id="@+id/meetingRoomFragment"
+        android:name="com.jotangi.twinsSum.ui.fragment.MeetingRoomFragment"
+        android:label="fragment_meeting_room"
+        tools:layout="@layout/fragment_meeting_room" />
+    <fragment
+        android:id="@+id/enterAndDemandFragment"
+        android:name="com.jotangi.twinsSum.EnterAndDemandFragment"
+        android:label="fragment_enter_and_demand"
+        tools:layout="@layout/fragment_enter_and_demand" />
+    <fragment
+        android:id="@+id/patientDataFragment"
+        android:name="com.jotangi.twinsSum.PatientDataFragment"
+        android:label="fragment_patient_data"
+        tools:layout="@layout/fragment_patient_data" />
+    <fragment
+        android:id="@+id/patientEditFragment"
+        android:name="com.jotangi.twinsSum.PatientEditFragment"
+        android:label="fragment_patient_edit"
+        tools:layout="@layout/fragment_patient_edit" />
+    <fragment
+        android:id="@+id/patientPictureFragment"
+        android:name="com.jotangi.twinsSum.PatientPictureFragment"
+        android:label="fragment_patient_picture"
+        tools:layout="@layout/fragment_patient_picture" />
+</navigation>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDataFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_a"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="A.病人姓名、性別、年齡\n病患姓名：王大名\n身分證字號：A123456789\n性別：男\n年齡：50歲" />
+
+            <TextView
+                android:id="@+id/tv_b"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_a"
+                tools:text="B.此次中風前ADL(MRS)" />
+
+            <EditText
+                android:id="@+id/et_b"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_b" />
+
+            <TextView
+                android:id="@+id/tv_c"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_b"
+                tools:text="C.PHx/Drug history" />
+
+            <EditText
+                android:id="@+id/et_c"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_c" />
+
+            <TextView
+                android:id="@+id/tv_d"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_c"
+                tools:text="D.病人最後正常時間(On set time)" />
+
+            <EditText
+                android:id="@+id/et_d"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_d" />
+
+            <TextView
+                android:id="@+id/tv_e"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_d"
+                tools:text="E.病人到達他院急診時間" />
+
+            <EditText
+                android:id="@+id/et_e"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_e" />
+
+            <TextView
+                android:id="@+id/tv_f"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_e"
+                tools:text="F.主要的NE deficit、FCS、患側肌力" />
+
+            <EditText
+                android:id="@+id/et_f"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_f" />
+
+            <TextView
+                android:id="@+id/tv_g"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_f"
+                tools:text="G.初評NIHSS" />
+
+            <EditText
+                android:id="@+id/et_g"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_g" />
+
+            <TextView
+                android:id="@+id/tv_h"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_g"
+                tools:text="H.懷疑中風的territory/large vessel" />
+
+            <EditText
+                android:id="@+id/et_h"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_h" />
+
+            <TextView
+                android:id="@+id/tv_i"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_h"
+                tools:text="I.有施打IV-tPA、r-tPA劑量及施打時間" />
+
+            <EditText
+                android:id="@+id/et_i"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_i" />
+
+            <TextView
+                android:id="@+id/tv_j"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_i"
+                tools:text="J.有施打IV-tPA後NIHSS分數" />
+
+            <EditText
+                android:id="@+id/et_j"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_j" />
+
+            <TextView
+                android:id="@+id/tv_k"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_j"
+                tools:text="K.無施打IV-tPA的原因" />
+
+            <EditText
+                android:id="@+id/et_k"
+                style="@style/et_patient_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_k" />
+
+            <TextView
+                android:id="@+id/tv_l"
+                style="@style/tvPatientData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_k"
+                tools:text="L.無施打IV-tPA，是否有先投予antiplatelet及劑量" />
+
+            <EditText
+                android:id="@+id/et_l"
+                style="@style/et_patient_edit"
+                android:layout_marginBottom="@dimen/const_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_l" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/const_20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="@dimen/const_16dp"
+                android:background="@drawable/s_bt_edit"
+                android:padding="12dp"
+                android:text="儲存"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_l" />
+
+            <TextView
+                android:id="@+id/tv_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/const_20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/s_bt_edit"
+                android:padding="12dp"
+                android:text="上傳圖片"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_save"
+                app:layout_constraintTop_toBottomOf="@+id/et_l" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
